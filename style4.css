@@ -1,0 +1,302 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-top: 0; /* Megakadályozza, hogy a body-nak legyen felesleges margója */
+    background-color: #dddddd;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 150vh; /* Fullscreen */
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1; /* A hero háttér alatt */
+}
+
+/* Top Bar - Most a háttér átlátszó és a hero kép fog megjelenni mögötte */
+header {
+    position: absolute; /* A topbar most a hero kép fölött lesz */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 2; /* A topbar most a hero kép fölött van */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+header .logo a {
+    color: rgb(144,213,255);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Dropdown Menu */
+header .dropdown a {
+    color: rgb(144,213,255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+.dropdown a:hover {
+  text-decoration: underline;
+}
+/* Hero Text Overlay */
+.hero-text {
+    text-align: center;
+    max-width: 80%;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+/* Section Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Container */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background-image: url('img/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Overlay for Text */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+/* Apartman kártyák */
+.apartmanok {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+}
+
+.card .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.card:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Lábléc */
+footer {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.hero {
+  background-image: url('balaton.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full screen height */
+  position: relative;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000; /* vagy amilyen eredetileg volt */
+  letter-spacing: 1px;
+  text-decoration: none; /* ez távolítja el az aláhúzást */
+}
+
+.logo:hover {
+  color: #5e5c59; /* vagy amit akarsz hoverre */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+.felszereltsegek-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  text-align: center;
+  color: #2c2c2c;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.felszereltsegek-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #888;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+/* ... a többi CSS szabályod ... */
+
+.hero {
+  position: relative; /* Fontos! */
+  /* ... a többi hero stílusod ... */
+  /* overflow: hidden; Ezt eltávolítjuk, hogy az overlay kilógjon */
+}
+
+.container {
+  width: 100%;
+  display: block;
+}
+
+.container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.slideshow-container {
+  position: relative;
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.fade {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+.horizontal-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.main-image {
+  flex: 0 0 45%;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.thumbnail-row {
+  flex: 0 0 50%;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.thumbnail-row img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: blur(2px) brightness(0.7);
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.thumbnail-row img.active {
+  filter: none;
+  transform: scale(1.05);
+  border: 2px solid #ff4d6d;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rólunk – Royal Houses</title>
+  <link rel="stylesheet" href="style3.css" />
+  <style>
+    .about-section {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .hero-section {
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero-text, .hero-image {
+      flex: 1 1 500px;
+      padding: 20px;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .map-section {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .map-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .reverse .hero-content {
+      flex-direction: row-reverse;
+    }
+    .about-section {
+  position: relative;
+  background-image: url('haz1.jpg'); /* Cseréld le a saját képedre */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* sötét overlay a háttérképre */
+  padding: 60px 20px;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.about-container {
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo"><a href="index.html">Royal Houses</a></div>
+    <div class="dropdown">
+      <a href="#">Rólunk</a>
+      <a href="#">Apartmanok</a>
+      <a href="hazirend.html">Házirend</a>
+    </div>
+  </header>
+
+<!-- Bemutatkozás -->
+<section class="about-section">
+  <div class="about-overlay">
+    <div class="about-container">
+      <h1>Rólunk</h1>
+      <p>A Royal Houses 2023-ban indult fiatalos apartmanházként. Célunk, hogy vendégeink számára kellemes és pihentető élményt biztosítsunk. Minden apró részletet szeretettel és gondoskodással alakítunk, hogy a nálunk töltött idő valóban felejthetetlen legyen.</p>
+      <p>Szeretettel várjuk a pihenni vágyókat Siófokon és Balatonlellén, a Balaton szívében. Kényelmes, modern apartmanjaink és barátságos légkörünk garantálja, hogy a nálunk töltött napok igazán különlegesek legyenek. Érezzék magukat otthon nálunk!</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Siófoki apartman -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="hero-text">
+<h1>Balatoni élmény Siófokon?<br><span style="color:#d32d79;">IGEN!</span></h1>
+<p>Siófok nem véletlenül a Balaton fővárosa – modern szállásaink tökéletes kiindulópontot jelentenek a nyári pezsgéshez, fürdéshez, és az esti programokhoz.</p>
+        </div>
+        <div class="hero-image">
+          <img src="malna.jpg" alt="Apartman Siófokban">
+          
+        </div>
+      </div>
+    </div>
+<div class="icon-row">
+  <div class="icon-box">
+    <img src="icon1.png" alt="Ikon 1">
+    <p class="icon-text">3 különálló apartman</p>
+  </div>
+  <div class="icon-box">
+    <img src="icon2.png" alt="Ikon 2">
+    <p class="icon-text">Akár 18 fő</p>
+  </div>
+  <div class="icon-box">
+    <img src="icon3.png" alt="Ikon 3">
+    <p class="icon-text">Közel a központhoz</p>
+  </div>
+</div>
+
+  </section>
+
+<!-- Térkép szekció -->
+<section class="map-section">
+  <img src="terkep.jpg" alt="Térkép a vendégházak helyéről">
+</section>
+
+<!-- Öcsi vendégház – ellentétes elrendezés -->
+<section class="hero-section reverse">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <div class="hero-text">
+<h1>Nyugalom Balatonlellén?<br><span>IGEN!</span></h1>
+<p>Az Öcsi Vendégház csendes, családbarát környezetben várja vendégeit. Tökéletes választás azoknak, akik kikapcsolódásra, nyugodt pihenésre vágynak a Balaton partján.</p>
+
+      </div>
+      <div class="hero-image">
+        <img src="ocsi.jpg" alt="Öcsi vendégház Balatonlellén">
+      </div>
+    </div>
+  </div>
+  <div class="icon-row">
+  <div class="icon-box">
+    <img src="icon4.png" alt="Ikon 1">
+    <p class="icon-text">2 különálló apartman</p>
+  </div>
+  <div class="icon-box">
+    <img src="icon5.png" alt="Ikon 2">
+    <p class="icon-text">Akár 12 fő</p>
+  </div>
+  <div class="icon-box">
+    <img src="icon6.png" alt="Ikon 3">
+    <p class="icon-text">10 percre a parttól</p>
+  </div>
+</div>
+</section>
+
+<!-- Kontakt szekció -->
+<!-- Kontakt szekció -->
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>Kapcsolatfelvétel</h2>
+    <p>Ha kérdésed van vagy foglalni szeretnél, vedd fel velünk a kapcsolatot!</p>
+
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>Telefon</h3>
+        <p><a href="tel:+36209648788">+36 70 212 3235</a></p>
+      </div>
+      <div class="contact-box">
+        <h3>Email</h3>
+        <p><a href="mailto:balatonkiado2023@gmail.com">balatonkiado2023@gmail.com</a></p>
+      </div>  
+    </div>
+  </div>
+</section>
+
+
+<!-- Lábjegyzet -->
+<footer class="footer">
+  <p>© 2023 Royal Houses – Minden jog fenntartva.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Houses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo"><a href="index.html">Royal Houses</a></div>
+    <div class="dropdown">
+      <a href="rolunk.html">Rólunk</a>
+      <a href="index.html#apartmanok">Apartmanok</a>
+      <a href="hazirend.html">Házirend</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Üdvözöl a RoyalHouse</h1>
+        <p>siófoki és balatonlellei Vendégházak</p>
+    </div>
+</section>
+  </div>
+
+  <section id="apartmanok" class="apartmanok">
+    <h2>Elérhető Apartmanok</h2>
+    <div class="cards">
+      <a href="malna-vendeghaz.html" class="card" style="background-image: url('malna.jpg')">
+        <div class="overlay">
+          <h3>Málna Vendégház</h3>
+          <p>Siófokon található, modern és tágas vendégház közel a strandhoz</p>
+        </div>
+      </a>
+      <a href="ocsi-vendeghaz.html" class="card" style="background-image: url('ocsi.jpg')">
+        <div class="overlay">
+          <h3>Öcsi Vendégház</h3>
+          <p>Balatonlellén található, családbarát ház gyönyörű panorámával</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Lábléc -->
+  <footer>
+    <p>© 2023 Royal Houses. Minden jog fenntartva.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+<script>
+  window.addEventListener('scroll', function () {
+    const parallax = document.querySelector('.parallax-bg');
+    const scrollPosition = window.scrollY;
+    parallax.style.transform = 'translateY(' + scrollPosition * 0.4 + 'px)';
+  });
+</script>
+
+</body>
+</html>

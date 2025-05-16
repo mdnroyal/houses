@@ -1,0 +1,557 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-top: 0; 
+    background-color: #dddddd;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 150vh; /* Fullscreen */
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1; /* A hero háttér alatt */
+}
+
+/* Top Bar - Most a háttér átlátszó és a hero kép fog megjelenni mögötte */
+header {
+    position: absolute; /* A topbar most a hero kép fölött lesz */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 2; /* A topbar most a hero kép fölött van */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+header .logo a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Dropdown Menu */
+header .dropdown a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+.dropdown a:hover {
+  text-decoration: underline;
+}
+/* Hero Text Overlay */
+.hero-text {
+    text-align: center;
+    max-width: 80%;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+/* Section Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Container */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background-image: url('img/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Overlay for Text */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+/* Apartman kártyák */
+.apartmanok {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+}
+
+.card .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.card:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Lábléc */
+.footer {
+  text-align: center;
+  color: #888;
+  padding: 20px 0;
+  font-size: 14px;
+}
+.hero {
+  background-image: url('balaton.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full screen height */
+  position: relative;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff; /* vagy amilyen eredetileg volt */
+  letter-spacing: 1px;
+  text-decoration: none; /* ez távolítja el az aláhúzást */
+}
+
+.logo:hover {
+  color: #5e5c59; /* vagy amit akarsz hoverre */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+.felszereltsegek-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  text-align: center;
+  color: #2c2c2c;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.felszereltsegek-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #888;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+/* ... a többi CSS szabályod ... */
+
+.hero {
+  position: relative; /* Fontos! */
+  /* ... a többi hero stílusod ... */
+  /* overflow: hidden; Ezt eltávolítjuk, hogy az overlay kilógjon */
+}
+
+.container {
+  width: 100%;
+  display: block;
+}
+
+.container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.rolunk-main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bemutatkozas {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bemutatkozas h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.vendeghazak-bemutatasa {
+  margin-bottom: 40px;
+}
+
+.vendeghazak-bemutatasa h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.vendeghaz-kartyak {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.vendeghaz-kartya {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(50% - 15px); /* Két kártya soronként */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.kep-galeria {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  overflow-x: auto; /* Görgethető képgaléria */
+}
+
+.kep-galeria img {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.vendeghaz-kartya h3 {
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+.vendeghaz-kartya p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.tovabb-gomb {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008080;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.tovabb-gomb:hover {
+  background-color: #006666;
+}
+
+.terkep-resz {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.terkep-resz h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.terkep-kontener {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.terkep-kontener img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.elerhetosegek {
+  text-align: center;
+}
+
+.elerhetosegek h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.elerhetoseg-adatok {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.elerhetoseg-blokk {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.elerhetoseg-blokk h3 {
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+.elerhetoseg-blokk p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.social-ikonok {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-ikonok img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Mobil nézetre */
+@media (max-width: 768px) {
+  .vendeghaz-kartya {
+      width: 100%;
+  }
+
+  .elerhetoseg-adatok {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .elerhetoseg-blokk {
+      width: 100%;
+  }
+}
+/* Alap reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #dddddd;
+  color: #333;
+}
+
+/* Topbar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header.transparent {
+  background: none;
+  box-shadow: none;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.dropdown a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Rólunk szekció */
+.about-section {
+  padding: 140px 40px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.about-section {
+  padding: 120px 30px 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+  background-color: #dddddd;
+}
+
+.about-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.about-section h1 span {
+  color: #0077b6; /* kiemelés szín */
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature-box {
+  background-color: #dddddd;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Animációk */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.features {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.feature-box {
+  width: 150px;
+  height: 150px;
+  background-color: #dddddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  margin: 0;
+}
